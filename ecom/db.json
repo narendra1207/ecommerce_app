@@ -1,0 +1,38 @@
+{
+  "posts": [
+    {
+      "id": 1,
+      "title": "json-server",
+      "author": "typicode"
+    }
+  ],
+  "signupUsers": [
+    {
+      "firstName": "narendra singh ",
+      "lastName": " lodhi",
+      "email": "nsingh@gmail.com",
+      "mobile": "8881212",
+      "password": "123456",
+      "id": 1
+    },
+    {
+      "firstName": "emma ",
+      "lastName": "watson",
+      "email": "emma@watson.com",
+      "mobile": "1111111",
+      "password": "123456",
+      "id": 2
+    },
+    {
+      "firstName": "emma ",
+      "lastName": "stone",
+      "email": "emmastone@g.com",
+      "mobile": "5555",
+      "password": "123456",
+      "id": 3
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  }
+}

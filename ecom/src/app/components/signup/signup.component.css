@@ -1,0 +1,31 @@
+
+.container{
+    margin-top: 20px;
+    position: absolute;
+    top:50%;
+    left: 10%;
+}
+.card{
+    position: absolute;
+   top:50%;
+   left: 30%;
+   border: none;
+   width: 50%;
+   padding: 20px;
+   transform: translate(-50% ,-50%);
+   background: rgb(162, 140, 190);
+   background: linear-gradient(90deg,rgb(129, 87, 148)0% ,rgb(161, 187, 192)100% );
+
+
+   }
+
+   .card h2 , h6 {
+    color: white;
+   }
+.card label {
+    color: white;
+}
+a{
+    color: azure;
+    margin-top: 10px;
+   }

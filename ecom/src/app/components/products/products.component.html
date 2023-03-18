@@ -1,0 +1,45 @@
+<div class="container-fluid">
+<div class="card-top container-fluid">
+
+    <div class="container d-flex">
+        <div class="item">
+            <a (click)="filters('')">
+                <img src="https://rukminim1.flixcart.com/flap/128/128/image/f15c02bfeb02d15d.png?q=100" alt="">
+                <h6>All Products</h6>
+            </a>
+        </div>
+        <div class="item">
+            <a (click)="filters('electronics')">
+                <img src="https://rukminim1.flixcart.com/flap/128/128/image/69c6589653afdb9a.png?q=100" alt="">
+                <h6>Electronics</h6>
+            </a>
+        </div>
+        <div class="item">
+            <a (click)="filters('fashion')">
+                <img src="https://rukminim1.flixcart.com/flap/128/128/image/82b3ca5fb2301045.png?q=100" alt="">
+                <h6>Fashion</h6>
+            </a>
+        </div>
+        <div class="item jewllery">
+            <a (click)="filters('jewelery')">
+                <img style="width: 82px; margin: 5px;" src="https://media.istockphoto.com/id/1184823704/photo/diamond-jewellery-set.jpg?s=612x612&w=is&k=20&c=IpD2Xza1aDwV8ilvnhQA1mCf3mz5Pih0unImKGEkWGc=" alt="">
+                <h6>jewllery</h6>
+            </a>
+        </div>
+    </div>
+</div>
+
+<div class="container">
+    <div class="row">
+        <ng-container *ngFor="let item of filterCategory | filter:searchKey :'title'">
+        <div class="card col-md-3">
+            <img src="{{item.image}}" alt="">
+            <h5 style="white-space: nowrap; overflow: hidden;text-overflow:ellipsis; max-width: 100ch;">{{item.title}}</h5>
+            <p style="white-space: nowrap; overflow: hidden;text-overflow:ellipsis; max-width: 100ch;">{{item.description}}</p>
+            <p> <strong>Price :</strong>$ {{item.price}}</p>
+            <button class="btn btnclr" (click)="addtocart(item)">Add To Cart</button>
+        </div>
+    </ng-container>
+    </div>
+</div>
+</div>
